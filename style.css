@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    /* background-color: aqua; */
+    --btn-color:#515299;
+    --heading-color: #2e2f57;
+    --un-color:#8283de;
+    --common: #acadd3;
+    overflow-y: hidden;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: yellowgreen; */
+    padding: 3rem 5rem;
+}
+
+/* ---------------------nav start--------------------------- */
+
+section[aria-label="navbar"]{
+    /* background-color: aqua; */
+    height: 10rem;
+}
+
+.navbar-container{
+    display: flex;
+}
+
+.navbar-container div:first-child{
+    /* background-color: blue; */
+    height: inherit;
+    width: 36rem;
+    /* margin: 2rem 0rem 0rem 0rem; */
+}
+
+.navbar-container .grow-list{
+    /* background-color: brown; */
+   
+    width: 75rem;
+    
+}
+
+.navbar-container .list{
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    padding: 2rem 0 0 0;
+    gap: 5rem;
+}
+
+.navbar-container .list .list-item:first-child{
+    font-size: 2rem;
+    font-weight: 420;
+    color: #000000;
+}
+
+.navbar-container .list .list-item{
+    font-size: 2rem;
+    font-weight: 420;
+    color: var(--common);
+    cursor: pointer;
+}
+
+.navbar-container .button-group{
+    /* background-color: yellow; */
+    /* height: 10vh; */
+    width: 30rem;
+    /* margin: 2rem 0 0 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-button{
+    border-color: transparent;
+    padding: 2rem 4rem;
+    border-radius: 2rem;
+    font-size: 1.8rem;
+    font-weight: 450;
+    background-color: var(--btn-color);
+    color: #ffffff;
+    cursor: pointer;
+}
+/* -----------------nav end------------------------- */
+
+
+/* ===================banner start========================= */
+section[aria-label="banner"]{
+    /* background-color:violet; */
+    /* height: 86vh; */
+}
+
+.banner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------left-------- */
+.banner-container div:first-child{
+    /* background-color: tomato; */
+    width: 40vw;
+    height: 54rem;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.banner-container div .heading-text{
+    color: var(--heading-color);
+    font-size: 6rem;
+    word-spacing: 1.5rem;
+    /* background-color: teal; */
+    width: 30vw;
+    margin-bottom: 3rem;
+}
+
+.banner-container div .heading-text span{
+    color: var(--un-color);
+}
+
+.banner-container div .description{
+    color: var(--common);
+    font-size: 1.8rem;
+    /* background-color: yellow; */
+    width: 24vw;
+    margin-bottom: 5rem;
+}
+
+/* .btn{
+
+} */
+
+/* --------left end----------- */
+
+/* ------------right---------------- */
+
+.banner-container div:last-child{
+    /* background-color: aqua; */
+    width: 60vw;
+    height: 59rem;
+}
+
+.banner-container div img{
+    width: 60vw;
+    height: 57rem;
+}
+/* --------------right end-------------- */
+
+
+/* ===================banner end========================= */
